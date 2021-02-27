@@ -1,14 +1,32 @@
-function testCycle(a, b) {
-    while ((a!=0) && (b!=0)); {
-        if (a==b)  break;
-        else if (a>b) {
-         a=a%b;
-         }
-        else {
-         b=b%a;   
-         }
-        }
-    return (a+b);
+var button = document.getElementById("getDate");
+var p = document.getElementById("date");
+var image = document.getElementById("kitten");
+var x = document.getElementById("xPos");
+var y = document.getElementById("yPos");
+
+getDate.onclick = function () {
+    p.innerHTML = Date();
+
 }
 
-document.body.innerHTML = <h1> hi from js.</h1>
+image.oncontextmenu = function () {
+    alert("Котик");
+}
+
+image.onmouseover = function () {
+    this.style.borderRadius = "30px";
+}
+
+image.onmouseout = function () {
+    this.style.borderRadius = "0px";
+}
+
+document.body.onmousemove = function () {
+    x.innerHTML = event.clientX;
+    y.innerHTML = event.clientY;
+
+}
+
+keyCode.onkeydown = function () {
+    p.innerHTML = event.keyCode;
+}

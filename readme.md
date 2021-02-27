@@ -1,6 +1,4 @@
-# Git and Github Course
-
- Hi, js
+# Hi, js
  
 it's my readme
 
