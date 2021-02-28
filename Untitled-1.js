@@ -1,32 +1,52 @@
-var button = document.getElementById("getDate");
-var p = document.getElementById("date");
-var image = document.getElementById("kitten");
-var x = document.getElementById("xPos");
-var y = document.getElementById("yPos");
+document.write("<h1>js</h1>");
 
-getDate.onclick = function () {
-    p.innerHTML = Date();
+let showdate = document.createElement(("button"));
+let hidedate = document.createElement(("button"));
+let enter = document.createElement("br");
+let time = document.createElement("p");
 
+showdate.innerText = "Показать дату";
+hidedate.innerText = "Скрыть дату";
+
+document.body.appendChild(showdate);
+document.body.appendChild(time);
+
+
+
+function showingdate ()
+{
+    let date = new Date();
+    let h = date.getHours();
+    let m = date.getMinutes();
+    let s = date.getSeconds();
+    time.innerHTML = h + " : " + m + " : " + s;
+    setTimeout(showingdate, 1000);
 }
 
-image.oncontextmenu = function () {
-    alert("Котик");
+showdate.onclick = showingdate;
+
+
+/*function showmydate ()
+{
+    let mydate = new Date();
+    let h = Date.getHours;
+    let m = Date.getMinutes;
+    let s = Date.getSeconds;
+
+    time.innerHTML = h + " : " + m + " : " + s;
 }
 
-image.onmouseover = function () {
-    this.style.borderRadius = "30px";
-}
+function hidemaydate ()
+{
+    clearInterval(timerON);
+    clearTimeout(timerON);
+}*/
 
-image.onmouseout = function () {
-    this.style.borderRadius = "0px";
-}
+/*let timerON = setInterval(showmydate, 1000);
+clearInterval(timerON);*/
 
-document.body.onmousemove = function () {
-    x.innerHTML = event.clientX;
-    y.innerHTML = event.clientY;
 
-}
+/*showdate.onclick = setInterval(showmydate, 1000);
 
-keyCode.onkeydown = function () {
-    p.innerHTML = event.keyCode;
-}
+hidedate.onclick = hidemaydate;*/
+
