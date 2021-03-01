@@ -1,5 +1,6 @@
 document.write("<h1>js</h1>");
 
+$("p").css("color", "red");
 
 //=========== Тест валидации формы =====================================
 let sendButton = document.getElementById("sendButton");
