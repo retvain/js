@@ -1,7 +1,24 @@
 document.write("<h1>js</h1>");
 
-$("p").css("color", "red");
+$("button").click(function (){
+    $(".text").fadeToggle();
+});
 
+
+
+
+
+
+//=========== Тест jquery =============================================
+//$("p").css("color", "red");
+$("img[src='http://placekitten.com/g/100/100']").after("Котик");
+$("img[src='http://placekitten.com/g/100/100']").click(function ()
+{
+   $(this).animate({
+       "opacity": "0.4"
+   }, 2000);
+});
+//======================================================================
 //=========== Тест валидации формы =====================================
 let sendButton = document.getElementById("sendButton");
 sendButton.onclick = function validation (event) {
