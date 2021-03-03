@@ -1,0 +1,102 @@
+[33mcommit b14695ee649f2dad087894ab7ffb432d1ab01bfa[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Mikhail Pelagein <retvain@gmail.com>
+Date:   Wed Mar 3 22:46:52 2021 +0500
+
+    site uc step 1
+
+[33mcommit e5bbb2af90925233847e7891623ef9b411dffbda[m
+Author: retvain <retvain@gmail.com>
+Date:   Wed Mar 3 16:48:46 2021 +0500
+
+    normalize.css
+
+[33mcommit 89cefad054b18e313b47c0513c656378ea006ecf[m
+Author: Mikhail Pelagein <retvain@gmail.com>
+Date:   Tue Mar 2 22:52:55 2021 +0500
+
+    css homework
+
+[33mcommit cb094558720635bc1ff7300b50db8c46a7687e4a[m
+Author: retvain <retvain@gmail.com>
+Date:   Tue Mar 2 16:55:57 2021 +0500
+
+    css step 7
+
+[33mcommit ff8cea4e8d9e514c3f94bbfc3721f856bcc30e41[m
+Author: Mikhail Pelagein <retvain@gmail.com>
+Date:   Mon Mar 1 22:32:54 2021 +0500
+
+    step 29 jquery start
+
+[33mcommit ceaddc10906925b8fd0f90b0af83cf5c97dbe366[m
+Author: retvain <retvain@gmail.com>
+Date:   Mon Mar 1 17:04:51 2021 +0500
+
+    test validation form done!
+
+[33mcommit d17ddfbf133f3f39113c5cb110c5f8e07d252b53[m
+Author: Mikhail Pelagein <retvain@gmail.com>
+Date:   Sun Feb 28 22:28:28 2021 +0500
+
+    js step 27 date full done!
+
+[33mcommit 666e6c49d893bf506319e2a78c293f0b79637b87[m
+Author: Mikhail Pelagein <retvain@gmail.com>
+Date:   Sun Feb 28 22:17:31 2021 +0500
+
+    js step 27. time
+
+[33mcommit 33adf8f4e91f94f2fc2f7f559a774c2f8953da7d[m
+Author: Mikhail Pelagein <retvain@gmail.com>
+Date:   Sat Feb 27 20:23:26 2021 +0500
+
+    js function
+
+[33mcommit 2b96b1ae2a334834224b937202d9bcae1c21b2fa[m
+Author: Mikhail Pelagein <retvain@gmail.com>
+Date:   Sat Feb 27 14:46:11 2021 +0500
+
+    fix readme
+
+[33mcommit d683443e312769a72d2bc90d32122205edcc739a[m
+Merge: 046502a 5e369a9
+Author: Mikhail Pelagein <retvain@gmail.com>
+Date:   Sat Feb 27 14:43:47 2021 +0500
+
+    create repo
+
+[33mcommit 5e369a9d20ab9d52caa20ca9029d8f7806b622b8[m
+Author: Mikhail Pelagein <retvain@gmail.com>
+Date:   Sat Feb 27 12:58:40 2021 +0500
+
+    tst
+
+[33mcommit e57cb458d1d94e18cff58bd9713ad76b7e8e91c9[m
+Author: Mikhail Pelagein <retvain@gmail.com>
+Date:   Sat Feb 27 12:53:35 2021 +0500
+
+    readme added in readme branch
+
+[33mcommit 046502ab6a4649fa9a05d350147a462211c73fb9[m
+Author: Mikhail Pelagein <retvain@gmail.com>
+Date:   Sat Feb 27 12:51:04 2021 +0500
+
+    readme test delete
+
+[33mcommit 08e0ff3386ba8cedd0ba034680df5bd7afcf1af1[m
+Author: Mikhail Pelagein <retvain@gmail.com>
+Date:   Sat Feb 27 12:41:25 2021 +0500
+
+    create readme
+
+[33mcommit 0c99de6f7cb56e92b5fe067dba853bedf08797cf[m
+Author: Mikhail Pelagein <retvain@gmail.com>
+Date:   Sat Feb 27 12:32:15 2021 +0500
+
+    added ignore
+
+[33mcommit 9ef2d321e2d860de2023791bd2567e318ef507d5[m
+Author: Mikhail Pelagein <retvain@gmail.com>
+Date:   Fri Feb 26 22:53:21 2021 +0500
+
+    first commit
