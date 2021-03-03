@@ -1,44 +1,83 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>my js</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>УЦ Оренбург</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/960.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-
-<div class="main">
-    <div class="name">
-        <p>Пелагеин Михаил</p>
+<header>
+    <div class="wrapperHeader">
+        <div class="logo">
+            <h1>Удостоверяющий центр</h1>
+        </div>
+        <div class="phone">
+            <ul>
+                <li>Тел: (3532) 70-57-57</li>
+                <li class="with_tab">70-44-55</li>
+                <li class="with_tab">70-44-25</li>
+            </ul>
+        </div>
+        <div class="callback">
+            <button>Позвоните мне</button>
+        </div>
     </div>
-    <div class="leftmenu">
-        <p>Увлечения</p>
+    <nav id="menu">
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Баскетбол</li>
+            <li><a href="/">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+                <ul class="submenu">
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Наша команда</a></li>
+                </ul>
+            <li><a href="#">Контакты</a></li>
         </ul>
-
-    </div>
-    <div class="rightmenu">
-        <a href="#">Ссылка</a>
-    </div>
-    <div class="picture">
-        <img src="https://placekitten.com/200/300" alt="">
+    </nav>
+</header>
+<div id="content">
+    <div class="container_12">
+        <h1>Почему надо выбрать именно нас</h1>
+        <div class="grid_6">
+            <h2>Причина первая</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquid deserunt dicta dignissimos
+                distinctio est harum ipsam nobis nostrum obcaecati porro ratione recusandae repellendus reprehenderit
+                sapiente,
+                suscipit vitae voluptatem?</p>
+        </div>
+        <div class="grid_6">
+            <h2>Причина вторая</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquid deserunt dicta dignissimos
+                distinctio est harum ipsam nobis nostrum obcaecati porro ratione recusandae repellendus reprehenderit
+                sapiente,
+                suscipit vitae voluptatem?</p>
+        </div>
+        <div class="grid_6">
+            <h2>Причина третья</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquid deserunt dicta dignissimos
+                distinctio est harum ipsam nobis nostrum obcaecati porro ratione recusandae repellendus reprehenderit
+                sapiente,
+                suscipit vitae voluptatem?</p>
+        </div>
+        <div class="grid_6">
+            <h2>Причина четвертая</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquid deserunt dicta dignissimos
+                distinctio est harum ipsam nobis nostrum obcaecati porro ratione recusandae repellendus reprehenderit
+                sapiente,
+                suscipit vitae voluptatem?</p>
+        </div>
     </div>
 </div>
+<footer>
+    <div class="footer_left"><p>Наши партнеры:</p></div>
+    <div class="footer_right"><p>Наши партнеры:</p></div>
 
-
-<form action="" id="formaction">
-    <input type="text" id="userName">
-    <input type="password" id="userPassword">
-
-    <button type="submit" id="sendButton">Отправить</button>
-</form>
-
-<script src='https://code.jquery.com/jquery-3.5.1.js'></script>
-<script src="Untitled-1.js"></script>
-
+</footer>
 </body>
 </html>

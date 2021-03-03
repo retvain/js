@@ -1,8 +1,10 @@
-document.write("<h1>js</h1>");
 
+
+/*
 $("button").click(function (){
     $(".text").fadeToggle();
 });
+*/
 
 
 
@@ -11,16 +13,16 @@ $("button").click(function (){
 
 //=========== Тест jquery =============================================
 //$("p").css("color", "red");
-$("img[src='http://placekitten.com/g/100/100']").after("Котик");
+/*$("img[src='http://placekitten.com/g/100/100']").after("Котик");
 $("img[src='http://placekitten.com/g/100/100']").click(function ()
 {
    $(this).animate({
        "opacity": "0.4"
    }, 2000);
-});
+});*/
 //======================================================================
 //=========== Тест валидации формы =====================================
-let sendButton = document.getElementById("sendButton");
+/*let sendButton = document.getElementById("sendButton");
 sendButton.onclick = function validation (event) {
     let userName = document.getElementById("userName");
     let userPassword = document.getElementById("userPassword");
@@ -35,10 +37,10 @@ sendButton.onclick = function validation (event) {
         userPassword.style.border = "1px solid red";
         return false;
     }
-}
+}*/
 //======================================================================
 //======== Часы на JS с функцией показа и скрытия ======================
-let showdate = document.createElement(("button"));
+/*let showdate = document.createElement(("button"));
 let hidedate = document.createElement(("button"));
 let enter = document.createElement("br");
 let time = document.createElement("p");
@@ -74,6 +76,6 @@ function showingdate ()
     }
 }
 
-showdate.onclick = showingdate;
+showdate.onclick = showingdate;*/
 //===================================================================
 
