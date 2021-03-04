@@ -79,13 +79,31 @@ nav {
 
 #content {
     min-height: 100%;
+
+}
+.center {
+    text-align: center;
+
 }
 .wrapperHeader {
     background-color: #7c4dff;
     overflow: hidden;
 }
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
 
-
+}
+.two, .four {
+    float: left;
+}
+.two {
+    width: 49%;
+}
+.four {
+    width: 25%;
+}
 footer {
     background-color: #232323;
     height: 200px;
@@ -96,49 +114,3 @@ footer {
     float: right;
     width: 49%;
 }
-
-
-/*
-nav {
-    width: 100%;
-    background-color: white;
-}
-#menu ul {
-    padding-top: 0;
-    margin: 0;
-}
-
-#menu ul li {
-    list-style: none;
-    display: inline-block;
-    position: relative;
-}
-
-#menu ul li a {
-    color: #7c4dff;
-    text-decoration: none;
-    font-size: 16px;
-    display: block;
-    padding: 0 10px;
-    line-height: 40px;
-}
-#menu ul li:hover .submenu{
-    display: block;
-}
-
-.submenu {
-    position: absolute;
-    display: none;
-    background-color: #fff;
-    padding: 0;
-    border: 1px solid #e1e1e1;
-}
-
-.submenu li {
-    min-width: 170px;
-}
-
-.submenu li:hover {
-    background-color: #7c4dff;
-    color: #fff;
-}*/
