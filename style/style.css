@@ -5,14 +5,52 @@ html, body {
 
 
 .logo, .phone, .callback {
+    background-color: #7c4dff;
     float: left;
     width: 33%;
 }
 header {
-    background-color: #7c4dff;
     overflow: hidden;
     color: aliceblue;
     box-shadow: 0 0 15px 2px #202020;
+}
+#menu {
+
+}
+#menu ul {
+    margin: 0;
+    padding-top: 0;
+
+}
+#menu ul li {
+    list-style: none;
+    display: inline-block;
+
+}
+#menu ul li a {
+    color: #7c4dff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 20px;
+    line-height: 40px;
+}
+.submenu {
+    top: 126px;
+    position: absolute;
+    display: none;
+    width: 170px;
+    background-color: white;
+    padding: 0;
+    border: 1px solid #7c4dff;
+}
+#menu ul li:hover .submenu {
+    display: block;
+}
+.submenu li {
+    min-width: 170px;
+}
+nav {
+    width: 100%;
 }
 .logo h1 {
     display: block;
@@ -34,10 +72,33 @@ header {
     top: 68px;
     font-size: 20px;
     background-color: white;
-    border: 2px solid #7c4dff;
+    border: 1px solid #7c4dff;
     border-radius: 5px;
     padding: 3px 7px;
 }
+
+#content {
+    min-height: 100%;
+}
+.wrapperHeader {
+    background-color: #7c4dff;
+    overflow: hidden;
+}
+
+
+footer {
+    background-color: #232323;
+    height: 200px;
+    clear: both;
+}
+.footer_left, .footer_right  {
+    color: white;
+    float: right;
+    width: 49%;
+}
+
+
+/*
 nav {
     width: 100%;
     background-color: white;
@@ -80,23 +141,4 @@ nav {
 .submenu li:hover {
     background-color: #7c4dff;
     color: #fff;
-}
-#content {
-    min-height: 100%;
-}
-.wrapperHeader {
-    background-color: #7c4dff;
-    overflow: hidden;
-}
-
-
-footer {
-    background-color: #232323;
-    height: 200px;
-    clear: both;
-}
-.footer_left, .footer_right  {
-    color: white;
-    float: right;
-    width: 49%;
-}
+}*/
