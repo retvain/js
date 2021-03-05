@@ -114,3 +114,15 @@ footer {
     float: right;
     width: 49%;
 }
+@media screen and (max-width: 850px) {
+.two, .four, .logo, .phone, .callback {
+    width: 100%;
+}
+    .logo h1 {
+        font-size: 20px;
+    }
+    .callback button {
+        right: 0px;
+        top: 0px;
+    }
+}
