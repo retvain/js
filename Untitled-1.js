@@ -3,38 +3,37 @@ $(document).ready(function () {
     let validName = false;
     let validEmail = false;
 
-    $('#name').click(function (){
-        $('#name').val("");
 
-    });
-    $('#email').click(function (){
-        $('#email').val("");
-
-    });
-
-    $("form").submit(function (event) {
+    $('form').submit(function (event) {
         event.preventDefault();
+        $('#name').addClass("is-valid");
+        $('#email').addClass("is-valid");
 
         let name = $("#name").val();
         let email = $("#email").val();
 
         if (name == "") {
-
+        $('#name').addClass("is-invalid");
         } else {
+            $('#name').addClass("is-valid");
             validName = true;
         }
         console.log(validName);
 
         if (email == "") {
-
+            $('#email').addClass("is-invalid");
         } else {
+            $('#email').addClass("is-valid");
             validEmail = true;
         }
         console.log(validEmail);
+        if (validName == true && validEmail == true) {
+            $(this).unbind('submit').submit();
+        }
+
     })
 
 });
-
 
 
 /*
