@@ -1,3 +1,40 @@
+$(document).ready(function () {
+
+    let validName = false;
+    let validEmail = false;
+
+    $('#name').click(function (){
+        $('#name').val("");
+
+    });
+    $('#email').click(function (){
+        $('#email').val("");
+
+    });
+
+    $("form").submit(function (event) {
+        event.preventDefault();
+
+        let name = $("#name").val();
+        let email = $("#email").val();
+
+        if (name == "") {
+
+        } else {
+            validName = true;
+        }
+        console.log(validName);
+
+        if (email == "") {
+
+        } else {
+            validEmail = true;
+        }
+        console.log(validEmail);
+    })
+
+});
+
 
 
 /*
@@ -5,10 +42,6 @@ $("button").click(function (){
     $(".text").fadeToggle();
 });
 */
-
-
-
-
 
 
 //=========== Тест jquery =============================================
