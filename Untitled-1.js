@@ -1,4 +1,25 @@
-$(document).ready(function () {
+function makeCounter() {
+    let count = 0;
+    return function () {
+        return count++;
+    }
+
+}
+
+let counter2 = makeCounter();
+let counter1 = makeCounter();
+
+console.log (counter1());
+console.log (counter1());
+console.log (counter1());
+
+
+
+
+
+
+//================Jquery Validation==============================
+/*$(document).ready(function () {
 
     let validName = false;
     let validEmail = false;
@@ -33,9 +54,9 @@ $(document).ready(function () {
 
     })
 
-});
+});*/
 
-
+//================================================================
 /*
 $("button").click(function (){
     $(".text").fadeToggle();
