@@ -1,17 +1,25 @@
-function makeCounter() {
-    let count = 0;
-    return function () {
-        return count++;
+function makeArmy() {
+    let shooters = [];
+
+
+    for(let i = 0; i < 10; i++) {
+        let shooter = function() { // shooter function
+
+            alert( i ); // should show its number
+        };
+        shooters.push(shooter);
+
     }
 
+    return shooters;
 }
 
-let counter2 = makeCounter();
-let counter1 = makeCounter();
 
-console.log (counter1());
-console.log (counter1());
-console.log (counter1());
+let army = makeArmy();
+
+army[0](); // the shooter number 0 shows 10
+army[5](); // and number 5 also outputs 10...
+// ... all shooters show 10 instead of their 0, 1, 2, 3...
 
 
 
