@@ -1,4 +1,32 @@
-function makeArmy() {
+/*let foo = {
+    age: 33,
+    name: "mikhail",
+    birthday: {
+        day: 7,
+        year: 1987
+    },
+    sayName: function () {
+        console.log("Меня зовут " + this.name);
+    }
+
+}
+let Man = {
+    "name 1": 123,
+
+}*/
+
+let user = {
+    name: "Mikhail",
+    age: 30
+};
+
+let key = prompt("Что вы хотите узнать о пользователе?");
+
+console.log(key);
+console.log(user[key]);
+
+
+/*function makeArmy() {
     let shooters = [];
 
 
@@ -19,11 +47,7 @@ let army = makeArmy();
 
 army[0](); // the shooter number 0 shows 10
 army[5](); // and number 5 also outputs 10...
-// ... all shooters show 10 instead of their 0, 1, 2, 3...
-
-
-
-
+// ... all shooters show 10 instead of their 0, 1, 2, 3...*/
 
 
 //================Jquery Validation==============================
