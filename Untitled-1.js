@@ -5,13 +5,11 @@ $(document).ready(function () {
 
         let arraySize,
             findValue,
-            position,
-            stepsValue;
+            stepsValue = 0;
 
         arraySize = parseInt($('#1_arraySize').val());
         findValue = parseInt($('#1_findPosition').val());
         let summa = arraySize + findValue;
-        console.log(summa);
 
         function generateArray(n) {
             let array = [];
@@ -23,21 +21,32 @@ $(document).ready(function () {
         }
 
         let arrayForBinary = generateArray(arraySize);
-        console.log(arrayForBinary);
         let low = 0;
         let high = arrayForBinary.length;
-        console.log(high);
+        let position = 'Not found';
+        let found = false;
+        let mid;
 
         function binary_search(findValue) {
-            while (low <= high){
-                let mid = low + high;
-                let guess = arrayForBinary[mid];
+            while (found === false && low <= high ){
+               stepsValue +=1;
+               mid = Math.floor((low+high)/2);
+               if (arrayForBinary[mid] == findValue) {
+                   found = true;
+                   position = mid;
+               } else if (arrayForBinary[mid] > findValue) {
+                   high = mid - 1;
+               } else {
+                   low = mid + 1;
+               }
             }
+            return [position.toString(), stepsValue.toString()];
 
         }
 
 
-        $('#1_result').text(low + high);
+        $('#1_result').text('Result: ' + binary_search(findValue)[0]);
+        $('#1_steps').text('Steps: ' + binary_search(findValue)[1]);
     })
 });
 
