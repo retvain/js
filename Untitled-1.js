@@ -1,3 +1,57 @@
+$(document).ready(function () {
+
+    $('#1_form').on('submit', function (event) {
+        event.preventDefault();
+
+        let arraySize,
+            findValue,
+            position,
+            stepsValue;
+
+        arraySize = parseInt($('#1_arraySize').val());
+        findValue = parseInt($('#1_findPosition').val());
+        let summa = arraySize + findValue;
+        console.log(summa);
+
+        function generateArray(n) {
+            let array = [];
+            for (let count = 1; count <= n; count++) {
+                array.push(count);
+            }
+
+            return array;
+        }
+
+        let arrayForBinary = generateArray(arraySize);
+        console.log(arrayForBinary);
+        let low = 0;
+        let high = arrayForBinary.length;
+        console.log(high);
+
+        function binary_search(findValue) {
+            while (low <= high){
+                let mid = low + high;
+                let guess = arrayForBinary[mid];
+            }
+
+        }
+
+
+        $('#1_result').text(low + high);
+    })
+});
+
+
+// console.log(generateArray(3));
+
+// document.querySelector('button').onclick = execFirstAlgorithm;
+
+// function execFirstAlgorithm ()
+// {
+//     console.log(document.querySelector('#1_arraySize').value);
+// }
+
+
 /*let foo = {
     age: 33,
     name: "mikhail",
@@ -15,15 +69,15 @@ let Man = {
 
 }*/
 
-let user = {
-    name: "Mikhail",
-    age: 30
-};
+// let user = {
+//     name: "Mikhail",
+//     age: 30
+// };
 
-let key = prompt("Что вы хотите узнать о пользователе?");
+// let key = prompt("Что вы хотите узнать о пользователе?");
 
-console.log(key);
-console.log(user[key]);
+// console.log(key);
+// console.log(user[key]);
 
 
 /*function makeArmy() {
