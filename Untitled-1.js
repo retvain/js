@@ -13,12 +13,15 @@ $(document).ready(function () {
 
         function generateArray(n) {
             let array = [];
+            let random = 0;
             for (let count = 1; count <= n; count++) {
+                random = (Math.floor(Math.random() * n)).toString();
                 array.push(count);
             }
 
             return array;
         }
+
 
         let arrayForBinary = generateArray(arraySize);
         let low = 0;
@@ -40,13 +43,13 @@ $(document).ready(function () {
                    low = mid + 1;
                }
             }
-            return [position.toString(), stepsValue.toString()];
+            return [position.toString(), stepsValue.toString(), arrayForBinary];
 
         }
 
-
         $('#1_result').text('Result: ' + binary_search(findValue)[0]);
         $('#1_steps').text('Steps: ' + binary_search(findValue)[1]);
+        $('#1_array').text('Array: ' + binary_search(findValue)[2]);
     })
 });
 
